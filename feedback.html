@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Next Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!--navbar section-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">CATS<3</a>
+            <div class="navbar__toggle" id="device-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/ragdoll.html" class="navbar__links">Ragdoll</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/munchkin.html" class="navbar__links">Munchkin</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/feedback.html" class="button">Feedback</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Feedback Form Section -->
+    <div class="feedback__container">
+        <h1>We Value Your Feedback</h1>
+        <p>Please let us know your thoughts. Fill out the form below:</p>
+        <form class="feedback__form" id="feedbackForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your feedback..." required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="feedbackResponse"></p>
+    </div>
+
+    <!-- footer section -->
+    <div class="footer__container">
+        <p class="website__rights">L0123134_SyavelaNisrinaLiset_LearningLabs2024</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
